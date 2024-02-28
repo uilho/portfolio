@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root{
+--cor-prim:black;
+--cor-secun: #F6F6F6;
+--cor-terc:  yellow;
+--cor-rodP: rgba(205, 187, 50, 0.88);
+
+}
+
+*{
+    margin: 0 ;
+    padding: 0;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-prim);
+    color:  var(--cor-secun);
+
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho_link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.44rem ;
+    font-weight: 580;
+    color: var(--cor-terc);
+    
+}
+
+.apresentacao{
+    padding: 3% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:82px ;
+}
+
+.titulo-destaque {
+    color: var(--cor-terc) ;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.titulo{
+    font-size: 1.875rem;
+    font-family: 'Krona One', sans-serif;
+}
+.paragrafo{
+    font-size: 1.437rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.rede_social{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.subtitulo_links{
+    font-family: 'krona one', sans-serif;
+    font-weight: 340;
+    font-size: 1.5rem;
+}
+.rede_links{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    border: 2px solid rgb(228, 228, 18);
+    width: 350px;
+    text-align: center;
+    border-radius: 8px;  
+    font-size: 1.437rem;
+    font-weight:570;
+    padding: 5px;
+    text-decoration: 0;
+    color:var(--cor-secun);
+    font-family: 'Montserrat', sans-serif;
+}
+.rede_links:hover{
+    transition: ease-in;
+    font-size: 1.687rem;
+    background-color: rgba(8, 251, 206, 0.044);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgba(73, 195, 222, 0.348)  ;
+}
+.rodape{
+    padding: 4px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(205, 187, 50, 0.88);
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.187rem;
+    font-weight: 280px;
+}
+.pato_home{
+    border: 3px outset var(--cor-terc);
+    height: 10%;
+}
+
+@media (max-width: 1200px) {
+    
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho_menu {
+        justify-content: center;
+        align-items: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5% ;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    
+}
